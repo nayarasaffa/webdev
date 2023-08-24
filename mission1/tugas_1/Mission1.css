@@ -1,59 +1,78 @@
+.container {
+  display: grid;
+  height: 100vh;
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "box1 box1 box5 box5 box5 box5"
+    "box1 box1 box6 box6 box9 box10"
+    "box1 box1 box6 box6 box9 box11"
+    "box2 box2 box7 box7 box9 box11"
+    "box3 box3 box7 box7 box12 box12"
+    "box4 box4 box8 box8 box12 box12";
+}
+
+.style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
 .box1 {
-  width: 300px;
-  height: 300px;
-  background: var(--box-color);
+  background: blue;
+  grid-area: box1;
 }
 
 .box2 {
-  width: 300px;
-  height: 100px;
-  background: var(--box-color);
+  background: yellow;
+  grid-area: box2;
 }
+
 .box3 {
-  width: 600px;
-  height: 100px;
-  background: var(--box-color);
+  background: red;
+  grid-area: box3;
 }
+
 .box4 {
-  width: 300px;
-  height: 200px;
-  background: var(--box-color);
+  background: green;
+  grid-area: box4;
 }
 .box5 {
-  width: 150px;
-  height: 300px;
-  background: var(--box-color);
+  background: black;
+  grid-area: box5;
 }
 .box6 {
-  width: 150px;
-  height: 100px;
-  background: var(--box-color);
+  background: brown;
+  grid-area: box6;
 }
 .box7 {
-  width: 150px;
-  height: 200px;
-  background: var(--box-color);
+  background: purple;
+  grid-area: box7;
 }
-.text-black {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
-  box-sizing: border-box;
+.box8 {
+  background: orange;
+  grid-area: box8;
 }
-.text-white {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
-  box-sizing: border-box;
+.box9 {
+  background: white;
+  grid-area: box9;
 }
-.flex-container {
-  display: flex;
+.box10 {
+  background: pink;
+  grid-area: box10;
+}
+.box11 {
+  background: cyan;
+  grid-area: box11;
+}
+.box12 {
+  background: gray;
+  grid-area: box12;
 }
