@@ -1,0 +1,203 @@
+/* Default Container */
+.container {
+  max-width: 1180px;
+  padding: 20px;
+}
+
+/* Font Style */
+.font-style-1 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.font-style-2 {
+  font-family: "Source Serif 4", serif;
+}
+
+/* Line Style */
+.line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.navbar-line-top {
+  top: 70px;
+}
+
+.navbar-line-bottom {
+  bottom: 10px;
+}
+
+/* Navbar Link */
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+/* Column Style */
+.content-col {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 50px;
+}
+
+.content-title {
+  font-size: 26px;
+  color: #091836;
+  margin-top: 15px;
+}
+
+.instr-col {
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+/* Responsive Settings */
+@media (max-width: 835px) {
+  /* Navbar Settings */
+  .dekstop-navbar {
+    width: 100%;
+    order: 1;
+    justify-content: flex-start;
+    margin-left: -13px;
+    margin-top: 25px;
+  }
+
+  /* Responsive Font Size */
+  .rfs-1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .rfs-2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  /* Responsive Forms */
+  .custom-input {
+    width: 95%;
+    height: 52px;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  .custom-button {
+    height: 52px; /* Adjust the height of the button */
+    width: 120px;
+    color: #ffff;
+    background-color: #65d777;
+    border-color: #65d777;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  /* Responsive Column */
+  .row {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+}
+
+@media (min-width: 835px) {
+  /* Responsive Font Size */
+  .rfs-1 {
+    font-size: 60px;
+    line-height: 1.3;
+    margin-top: 25px;
+    margin-left: 215px;
+    margin-right: 215px;
+  }
+
+  .rfs-2 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 55px;
+    margin-left: 260px;
+    margin-right: 260px;
+  }
+
+  /* responsive Forms */
+  .custom-input {
+    width: 50%;
+    height: 52px;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  .form-container {
+    max-width: 40%;
+  }
+
+  .custom-button {
+    height: 52px; /* Adjust the height of the button */
+    width: 120px;
+    color: #ffff;
+    background-color: #65d777;
+    border-color: #65d777;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+
+  /* Responsive Column */
+  .instr-col {
+    margin-bottom: 50px;
+  }
+
+  .text-container {
+    margin-left: 30px; /* Adjust spacing between image and text */
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Navbar Settings */
+  .dekstop-navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    order: 1;
+    justify-content: flex-start;
+    margin-left: -13px;
+    margin-top: 25px;
+  }
+}
+
+/* Animation Settings */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+}
