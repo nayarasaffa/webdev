@@ -1,0 +1,10 @@
+body {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  background-color: #ffc872;
+}
+
+#board {
+  background-color: #30a0e0;
+  border-bottom: 1px solid black;
+}
